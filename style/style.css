@@ -1,0 +1,206 @@
+a, body, div, form, html, h1, h2, h3, h4, h5, ul, li, p, span  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family:time-new-roman;	
+}
+
+body {
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  line-height: 1;
+  min-width: 100%;
+  min-height: 100%;
+  color: #fff;
+  background-color: #fff;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/logo2.jpg);
+  background-size: cover;
+  font: 20px time-new-roman;
+}
+
+.univ{
+	padding-top: 150px;
+	font-size: 2.5em;
+	margin-top:0.5em;
+	margin-bottom: 0.0em;
+	color: white;
+	text-align:center;
+}
+
+.kotak_login{
+	width:350px;
+	padding:20px;				
+	margin: 0 auto;
+	margin-top:85px;
+	border: white solid 1px;
+	background-color:rgba(0,0,0,0.7);
+}
+
+.tulisan_login{
+	font-size:20px;
+	border-bottom:white solid 5px;
+	color:white;
+	text-align: center;
+	margin-bottom:20px;
+	padding: 13px 0;
+	text-transform: uppercase;
+}
+
+.form_login{
+	background-color:rgba(0,0,0,0);
+	color:white;
+	width: 100%;
+	font-size:11pt;
+	margin: 8px 0;
+}
+
+.tombol_login{
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+	color: white;
+	padding:5px;
+	margin:12px 0;
+	cursor:pointer;
+	border-radius:1.5em;
+	border: white solid 1px;
+	text-align:center;
+	font-family: time-new-roman;
+	
+}
+
+.tombol_login:hover, .tombol_login:focus, .tombol_login:active{
+	color:black;
+	background-color:white;
+}
+
+.container{
+	background-color:rgba(0,0,0,0.7);
+	min-height:100%;
+	position:relative;
+	width:900px;
+	margin:auto;
+}
+
+.header{
+	height:120px;
+	background-color:#002147;
+	padding:10px;
+	padding-bottom:11px;
+}
+
+.logo {
+	border:white solid 1px;
+	margin-top:3px;
+    float: left;
+	margin-left:10px;
+    margin-right: -100%;
+    position: relative;
+    z-index: 2;
+}
+
+.header li {
+	position:relative;
+	top:35px;
+	display: inline-block;
+	margin-right: 25px;
+	margin-bottom: 0px;
+	height: auto;
+}
+
+.header li a{
+	
+	text-decoration: none;
+	color: white;
+}
+
+.header li a:hover{
+	background-color:transparent;
+}
+							/*style yang lain juga ada di sini bukan hanya untuk login saja*/
+.header li a:active{
+	color: #002147;
+	background-color: #3479B2;
+}
+
+.navmenu {
+  border: 0px;
+}
+
+
+.tombol_sc{
+	background-color:#002147;
+	color:white;
+	border:none;
+	width:70px;
+	height:22px;
+	cursor:pointer;
+}
+
+.tombol_sc:hover, .tombol_sc:focus, .tombol_sc:active{
+	color:white;
+	background-color: #3479B2;
+}
+
+.page {
+	padding: 25px;
+}
+
+.page h2 {
+	font-size: 28px;
+	color: white;
+	margin-bottom: 25px;
+}
+
+.page p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer {
+  padding: 15px;
+	background: rgba(red, green, blue, .7);
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	font-family: time-new-roman;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.menu-item {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+  transition: background .3s linear;
+}
+
+.menu-item:hover {
+  background: #3479B2;
+}
+
+.sub-menu {
+  display: block;
+  position: absolute;
+  width: 250px;
+  height:145px;
+  left: 0;
+  opacity: 1;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: all .2s linear;
+}
+
+.has-child:hover .sub-menu {
+  opacity: 1;
+  transform: scaleY(1);
+}
