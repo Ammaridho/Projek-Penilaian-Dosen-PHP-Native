@@ -5,7 +5,7 @@
 		<a href="?module=daftarBaru_kuisioner#pos">Daftar Baru</a><br></br>
 		<?php
 		include "koneksi.php";
-		$select="Select * from kuisioner";
+		$select="SELECT * FROM kuisioner";
 		$hasil=mysqli_query($conn, $select);
 		?>
 		<table width="780" border="1">

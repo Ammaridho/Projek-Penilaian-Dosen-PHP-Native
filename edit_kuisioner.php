@@ -7,7 +7,7 @@
 <?php
 $id_soal = $_GET['id_soal'];
 include "koneksi.php";
-$select = "SELECT * from kuisioner where id_soal='$id_soal'";
+$select = "SELECT * FROM kuisioner WHERE id_soal='$id_soal'";
 $hasil = mysqli_query($conn, $select);
 while($buff=mysqli_fetch_array($hasil)){
 ?>

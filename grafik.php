@@ -11,7 +11,7 @@
     include "koneksi.php";
     session_start();
     $id_dosen=$_SESSION['id_dosen'];
-    $select="SELECT * from hasil_kuisioner inner join kuisioner on hasil_kuisioner.id_soal=kuisioner.id_soal where id_dosen='$id_dosen'";
+    $select="SELECT * FROM hasil_kuisioner INNER JOIN kuisioner ON hasil_kuisioner.id_soal=kuisioner.id_soal WHERE id_dosen='$id_dosen'";
     $hasil_kuisioner=mysqli_query($conn, $select);
 		?>
 		<table width="850" border="1">

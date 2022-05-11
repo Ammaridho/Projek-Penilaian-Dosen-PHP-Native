@@ -1,7 +1,7 @@
 <?php
 include "koneksi.php";
 session_start();
-$select="Select * from dosen where username='$_SESSION[username]'";
+$select="SELECT * FROM dosen WHERE username='$_SESSION[username]'";
 $hasil=mysqli_query($conn, $select);
 $buff=mysqli_fetch_array($hasil);
 

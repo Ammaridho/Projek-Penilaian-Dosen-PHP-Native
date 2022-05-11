@@ -2,7 +2,7 @@
 <?php //tampilan yang dimunculkan di home admin
 include "koneksi.php";
 session_start();
-$select="Select * from user where username='$_SESSION[username]'";
+$select="SELECT * FROM user WHERE username='$_SESSION[username]'";
 $hasil=mysqli_query($conn, $select);
 $buff=mysqli_fetch_array($hasil);
 

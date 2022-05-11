@@ -1,7 +1,7 @@
 <?php
     include "koneksi.php";
 
-    $select = "SELECT * from hasil_kuisioner inner join dosen on hasil_kuisioner.id_dosen=dosen.id_dosen inner join kuisioner on 
+    $select = "SELECT * FROM hasil_kuisioner INNER JOIN dosen ON hasil_kuisioner.id_dosen=dosen.id_dosen INNER JOIN kuisioner ON 
             hasil_kuisioner.id_soal=kuisioner.id_soal GROUP BY hasil_kuisioner.id_dosen";
     $hasil = mysqli_query($conn, $select);
     $rowcount = mysqli_num_rows($hasil);
@@ -94,7 +94,7 @@
 
 <?php 
     include "koneksi.php";
- 		$select1= "SELECT * from hasil_kuisioner inner join dosen on hasil_kuisioner.id_dosen=dosen.id_dosen inner join kuisioner on hasil_kuisioner.id_soal=kuisioner.id_soal GROUP BY hasil_kuisioner.id_dosen";
+ 		$select1= "SELECT * FROM hasil_kuisioner INNER JOIN dosen ON hasil_kuisioner.id_dosen=dosen.id_dosen INNER JOIN kuisioner ON hasil_kuisioner.id_soal=kuisioner.id_soal GROUP BY hasil_kuisioner.id_dosen";
  		$hasil1 = mysqli_query($conn, $select1);
  	 ?>
 

@@ -5,7 +5,7 @@
 		<a href="?module=daftarBaru_mahasiswa#pos">Daftar Baru</a><br></br>
 		<?php
 		include "koneksi.php";
-		$select="Select * from mahasiswa";
+		$select="SELECT * FROM mahasiswa";
 		$hasil=mysqli_query($conn, $select);
 		?>
 		<table width="850" border="1">

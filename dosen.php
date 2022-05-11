@@ -1,7 +1,7 @@
 <?php //untuk tampilan home admin
 include "koneksi.php";
 session_start();
-$select="Select * from dosen where id_dosen='$_SESSION[id_dosen]'";
+$select="SELECT * FROM dosen WHERE id_dosen='$_SESSION[id_dosen]'";
 $hasil=mysqli_query($conn, $select);
 $buff=mysqli_fetch_array($hasil);
 

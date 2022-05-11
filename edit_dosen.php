@@ -4,7 +4,7 @@
 		<?php
 		$id_dosen = $_GET['id_dosen'];			//FORM UNTUK EDIT DOSEN
 		include "koneksi.php";
-		$select = "SELECT * from dosen where id_dosen='$id_dosen'";  
+		$select = "SELECT * FROM dosen WHERE id_dosen='$id_dosen'";  
 		$hasil = mysqli_query($conn, $select);
 		while($buff=mysqli_fetch_array($hasil)){
 		?>

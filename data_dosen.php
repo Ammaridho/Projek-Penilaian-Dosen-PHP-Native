@@ -5,7 +5,7 @@
 		<a href="?module=daftarBaru_dosen#pos">Daftar Baru</a><br></br>  
 		<?php
 		include "koneksi.php";
-		$select="Select * from dosen";
+		$select="SELECT * FROM dosen";
 		$hasil=mysqli_query($conn, $select);        //untuk menampilkan tabel dosen
 		?>
 

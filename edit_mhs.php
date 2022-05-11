@@ -4,7 +4,7 @@
 		<?php
 		$id_mahasiswa=$_GET['id_mahasiswa'];
 		include"koneksi.php";
-		$select="Select * from mahasiswa where id_mahasiswa='$id_mahasiswa'";
+		$select="SELECT * FROM mahasiswa WHERE id_mahasiswa='$id_mahasiswa'";
 		$hasil=mysqli_query($conn, $select);
 		while($buff=mysqli_fetch_array($hasil)){
 		?>
